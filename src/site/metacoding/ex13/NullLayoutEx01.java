@@ -22,17 +22,6 @@ public class NullLayoutEx01 extends MyFrame{
 		panel.add(btn1);
 		
 		setVisible(true);
-		
-		new Thread(()->{
-			for(int i=0; i<200; i++) {
-				try {
-					Thread.sleep(50);
-					btn1.setLocation(x++, y++);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		}).start();
 	}
 	
 	public static void main(String[] args) {
